@@ -1,0 +1,44 @@
+########## Problem Statement/Challenge ##########
+# Create a function for Insertion Sort implementation.
+# Print the array after each iteration.
+
+
+########## Input Format ##########
+# There will be two lines of input:
+# s - the size of the array
+# ar - a list of numbers that makes up the array
+# Output Format 
+### Sample:
+# 6
+# 1 4 3 5 6 2
+
+########## Output Format ##########
+# On each line, output the entire array at every iteration.
+### Sample:
+# 1 4 3 5 6 2 
+# 1 3 4 5 6 2 
+# 1 3 4 5 6 2 
+# 1 3 4 5 6 2 
+# 1 2 3 4 5 6
+
+#################### Solution ####################
+# defining function
+def insertionSort(ar):
+    for i in xrange(1,len(ar)):
+        key =ar[i]
+        j = i-1
+        while (j>=0):
+            if ar[j]>key:
+                ar[j+1]=ar[j]
+                ar[j]=key
+            j-=1
+        for element in ar:
+            print element,
+        print""
+    return ""
+# input section
+m = input()
+ar = [int(i) for i in raw_input().strip().split()]
+
+# calling the function
+insertionSort(ar)
