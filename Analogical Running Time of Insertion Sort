@@ -8,7 +8,6 @@
 
 
 ########## Input Format ##########
-# Input Format 
 # The first line contains N, the number of elements to be sorted. The next line contains N integers a[1], a[2], ..., a[N].
 
 ### Sample:
@@ -21,7 +20,7 @@
 
 ### Sample:
 
-4
+# 4
 
 #################### Solution ####################
 
